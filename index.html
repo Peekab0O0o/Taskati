@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Under Construction</title>
+
     <style>
         /* Reset default margin and padding */
         * {
@@ -22,6 +23,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 20px; /* Add padding for smaller screens */
         }
 
         /* Main container */
@@ -41,13 +43,13 @@
         }
 
         .logo {
-            max-width: 400px;
+            max-width: 100%; /* Ensure the logo scales with the container */
             height: auto;
         }
 
         /* Heading styling */
         .heading {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Adjusted for smaller screens */
             color: #2c3e50;
             font-weight: bold;
             margin-bottom: 10px;
@@ -55,14 +57,14 @@
 
         /* Message paragraph */
         .message {
-            font-size: 1.2rem;
+            font-size: 1rem; /* Adjusted for smaller screens */
             color: #7f8c8d;
             margin-bottom: 20px;
         }
 
         /* Contact information styling */
         .contact-info p {
-            font-size: 1.1rem;
+            font-size: 0.9rem; /* Adjusted for better scaling */
             color: #34495e;
             margin-bottom: 10px;
         }
@@ -72,12 +74,41 @@
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
+            word-wrap: break-word; /* Ensure long links wrap properly */
         }
 
         .link:hover {
             text-decoration: underline;
         }
 
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .heading {
+                font-size: 1.8rem;
+            }
+
+            .message {
+                font-size: 0.9rem;
+            }
+
+            .contact-info p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .heading {
+                font-size: 1.5rem;
+            }
+
+            .message {
+                font-size: 0.8rem;
+            }
+
+            .contact-info p {
+                font-size: 0.7rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -95,4 +126,3 @@
     </div>
 </body>
 </html>
-
